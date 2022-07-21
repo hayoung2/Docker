@@ -85,7 +85,9 @@ CMD ["node","app.mjs"]
 
 ​	**<b>- <span style="background-color:#ffdce9">실습 결과</span></b>**
 
-<img src="C:\Users\dudgk\Desktop\캡처.PNG" alt="실습 예제 스크린샷" style="zoom:150%;" /> 
+![실습 결과 스크린샷](https://user-images.githubusercontent.com/39898938/180151519-55d76d19-6e39-4986-b6f0-1155ff7b126d.PNG) 
+
+
 
 
 
