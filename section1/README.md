@@ -32,7 +32,7 @@
 
 
 
-### **Docker vs VM(Veritual Merchine)**
+### **Docker vs VM(Virtual Machine)**
 
 ​	: [VM](https://www.ibm.com/kr-ko/cloud/learn/virtual-machines)은 기존 OS 위에 가상머신을 설치한다(= [stand-alone computer](https://www.pcmag.com/encyclopedia/term/stand-alone-pc)).  VM 같은 경우,  분리된 환경과 환경별 구성을 가질 수 있으며 안정적인 것이 장점이다.   하지만 매번 새로운 컴퓨터를 내부에 설치함으로써 공간이 낭비(Ex. 메모리, CPU, 하드 드라이브)  되거나 성능이 저하되는 단점이 발생한다.  아래 그림을 보면 Docker는  하나의 머신에 여러 대의 머신을 설치하지 않지만,  여러개의 컨테이너로 구성되며 Docker를 기반으로 컨테이너가 실행된다.  Docker는 VM에 비해 매우 가볍고 빠르며 최소한의 디스크 공간을 사용하고  컨테이너를 공유, 재구축 및 배포하는 것에 매우 용이하다. 
 
@@ -87,7 +87,9 @@ CMD ["node","app.mjs"]
 # docker stop [할당된 컨테이너 이름] : 컨테이너 실행종료
 ```
 
-<div style="text-align: right"> *DockerFile :  Docker 이미지생성 프로세스를 자동화하는 파일.    </div>
+ 		*DockerFile :  Docker 이미지생성 프로세스를 자동화하는 파일.
+
+
 
 
 
