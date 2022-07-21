@@ -1,7 +1,5 @@
 # Section 1: what is Docker ? 
 
-------
-
 ### 	📝 목차  
 
 ​         - Docker란 ? 
