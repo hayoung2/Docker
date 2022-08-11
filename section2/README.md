@@ -1,4 +1,4 @@
-# Section2 : Image
+# Section 2-1 : Image
 
 ### 📝 목차
 
@@ -88,4 +88,38 @@ docker run -it node
 [계층화 아키텍처 (Layered Architecture) (hudi.blog)](https://hudi.blog/layered-architecture/)
 
 [What Are Docker Image Layers? | Packagecloud Blog](https://blog.packagecloud.io/what-are-docker-image-layers/#:~:text=Docker Layer Overview Docker is a containerization platform,in the kernels to run multiple isolated containers.)
+
+
+
+## Section 2 Managing Images & Containers 1
+
+
+
+```dockerfile
+docker ps -a # 중지된 컨테이너를 검색 가능
+
+docker attach 이름 
+# 그 이름의 컨테이너가 다시 연결
+
+docker logs 이름
+# 해당 컨테이너에 의한 출력된 과거 로그 확인 가능
+
+docjer start -a 이름 # default 가 detach 모드인데 -a 사용할 경우, attach
+```
+
+docker attached 모드 ?  docker run 모드 터미널에도 표시
+
+디폴트로 '`-d`' 없이 컨테이너를 실행하면, "attached모드"로 실행됩니다.
+
+detached 모드(예: `-d`)로 컨테이너를 시작한 경우에는 다음 명령을 사용하여 컨테이너를 다시 시작하지 않고도 컨테이너에 연결할 수 있습니다.
+
+```
+docker attach CONTAINER
+```
+
+이는 `CONTAINER`라는 ID 또는 이름으로 실행 중인 컨테이너에 연결합니다.
+
+
+
+하나의 동일한 터미널을 사용할 때 이점은 다른 작업 수행 가능
 
