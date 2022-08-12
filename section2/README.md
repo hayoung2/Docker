@@ -93,8 +93,6 @@ docker run -it node
 
 ## Section 2 Managing Images & Containers 1
 
-
-
 ```dockerfile
 docker ps -a # 중지된 컨테이너를 검색 가능
 
@@ -104,10 +102,12 @@ docker attach 이름
 docker logs 이름
 # 해당 컨테이너에 의한 출력된 과거 로그 확인 가능
 
-docjer start -a 이름 # default 가 detach 모드인데 -a 사용할 경우, attach
-```
+docker start -a 이름 # default 가 detach 모드인데 -a 사용할 경우, attach
 
-docker attached 모드 ?  docker run 모드 터미널에도 표시
+docker rm 이름 # 실행중인 컨테이너 제거 
+docker rmi ID # 이미지 제거 
+docker image prune # 사용되지않는 이미지 제거 
+```
 
 디폴트로 '`-d`' 없이 컨테이너를 실행하면, "attached모드"로 실행됩니다.
 
@@ -118,8 +118,4 @@ docker attach CONTAINER
 ```
 
 이는 `CONTAINER`라는 ID 또는 이름으로 실행 중인 컨테이너에 연결합니다.
-
-
-
-하나의 동일한 터미널을 사용할 때 이점은 다른 작업 수행 가능
 
