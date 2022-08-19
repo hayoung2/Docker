@@ -119,3 +119,24 @@ docker attach CONTAINER
 
 이는 `CONTAINER`라는 ID 또는 이름으로 실행 중인 컨테이너에 연결합니다.
 
+
+
+## Section 2 Managing Images & Containers 2
+
+```dockerfile
+docker image inspect ID # 이미지에 대한 정보 제공
+# 컨테이너 구성,운영체제,다른 레이어들 등 
+
+docker cp dummy/. 컨테이너Names:/test# 실행중인 컨테이너에서 파일 or  폴더 복사 가능
+# 컨테이너 이름 :/ 복사하려는 컨테이너 내부 경로 지정하는 것  
+docker cp dummy/. 컨테이너Names:/test dummy
+# 두번째는 로컬 폴더 -> 목적지 로컬 폴더 
+
+docker run --name hayoung image # 원래 자동으로 설정되는 것을 hayoung으로 컨테이너이름 설정
+docker stop hayoung # 정지 
+ 
+FROM node:12 # 12 태그 사용 노드는 일반적인 이미지 그룹, but 다양한 태그지님 
+
+docker build -t dd:vv # dd-> repository vv->TAG
+```
+
